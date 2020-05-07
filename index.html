@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <STRONG>QUARTERLY INSPECTION</STRONG>
+    <p>OWS FUNCTIONING
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q1">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q1">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q1">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q1">
+    </p>
+    <p>Presence of Free Product<sup>1</sup>
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q2">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q2">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q2">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q2">
+    </p>
+    <p>Presence of Sheen<sup>1</sup>
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q3">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q3">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q3">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q3">
+    </p>
+    <p>Presence of Fuel Odor<sup>1</sup>
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q4">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q4">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q4">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q4">
+    </p>
+    <p>Coalescer Inspection for Fouling
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q5">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q5">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q5">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q5">
+    </p>
+    <p>Operation of Pump, Valve, Skimmer, etc.
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q6">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q6">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q6">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q6">
+    </p>
+    <strong>SEMI-ANNUAL INSPECTION</strong>
+    <p>
+        Leaks from Separator or Appurtenances
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q7">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q7">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q7">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q7">
+    </p>
+    <p>
+        Operation of Pumps
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q8">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q8">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q8">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q8">
+    </p>
+    <p>
+        Determination of Solids Leve<sup>1</sup>
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q9">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q9">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q9">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q9">
+    </p>
+    <p>
+        OWS Free of Blockage
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q10">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q10">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q10">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q10">
+    </p>
+    <p>
+        Up/Down Stream Free of Blockage
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q11">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q11">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q11">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q11">
+    </p>
+    <strong>ANNUAL INSPECTION</strong>
+    <p>
+        Determination of Oil Level
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q12">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q12">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q12">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q12">
+    </p>
+    <strong>AS REQUIRED</strong>
+    <p>
+        Inspection/Cleaning of Internal Chambers
+        <input type="radio" id="SAT" onclick="item_define(this.id,this.name)" name="Q13">
+        <input type="radio" id="UNSAT" onclick="item_define(this.id,this.name)" name="Q13">
+        <input type="radio" id="NA" onclick="item_define(this.id,this.name)" name="Q13">
+        <input type="radio" id="CAR" onclick="item_define(this.id,this.name)" name="Q13">
+    </p>
+    <form id="form">
+        <input type="text" name="entry1" id="fQ1" class="hidden" disabled required>
+        <input type="text" name="entry2" id="fQ2" class="hidden" disabled required>
+        <input type="text" name="entry3" id="fQ3" class="hidden" disabled required>
+        <input type="text" name="entry4" id="fQ4" class="hidden" disabled required>
+        <input type="text" name="entry5" id="fQ5" class="hidden" disabled required>
+        <input type="text" name="entry6" id="fQ6" class="hidden" disabled required>
+        <input type="text" name="entry7" id="fQ7" class="hidden" disabled required>
+        <input type="text" name="entry8" id="fQ8" class="hidden" disabled required>
+        <input type="text" name="entry9" id="fQ9" class="hidden" disabled required>
+        <input type="text" name="entry10" id="fQ10" class="hidden" disabled required>
+        <input type="text" name="entry11" id="fQ11" class="hidden" disabled required>
+        <input type="text" name="entry12" id="fQ12" class="hidden" disabled required>
+        <input type="text" name="entry13" id="fQ13" class="hidden" disabled required>
+        <div class="btn btn-three" onclick="submit()">
+            <span>Submit</span>
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
