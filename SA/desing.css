@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Brutal";
+    src: url("asset/Brutal_font.ttf");
+}
+
+body {
+	font-family: "Brutal";
+	height: 100px;
+	text-align: center;
+	background-color: rgb(245, 245, 245);
+}
+.btn {
+	font-family: "Brutal";
+	font-weight: bolder;
+	appearance: none;
+	min-width: 300px;
+	padding: 5px 20px;
+	user-select: none;
+	text-align: center;
+	font-size: 2rem;
+	outline: none;
+	letter-spacing: 1px;
+	margin: 15px 0px;
+	transition: all 0.4s ease 0s;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn:focus {
+	box-shadow: 0 0 3pt 2pt cornflowerblue;
+	border: 2px solid transparent;
+}
+
+.start {
+	border-radius: 10px;
+	border: 2px solid orange;
+	background: orange;
+	color: white;
+}
+
+.start:hover {
+	background: none;
+	color: orange;
+}
+
+.game-settings {
+	border-radius: 10px;
+	border: 2px solid lightblue;
+	background: lightblue;
+	color: white;
+}
+.game-settings:hover {
+	background: none;
+	color: lightblue;
+}
+
+.start[disabled] {
+	color: #d2d5db;
+	background: rgb(170, 111, 0);
+	cursor: not-allowed;
+}
+
+.hidden {
+	display: none;
+}
+
+.options {
+	transform: scale(0);
+	display: none;
+}
+.options.animate {
+	display: block;
+	animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* KEYFRAMES */
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+	}
+	75% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

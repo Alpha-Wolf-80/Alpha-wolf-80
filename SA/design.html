@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desing.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div id="Menu" class="game-state">
+		<img src="asset/Logo.png" width="80%"/>
+		<button class="btn game-settings" onclick="c()">Game Settings</button><br>
+		<div id="options" class="options">
+			<span id="Game_duration_show">Game duration</span><br>
+			<input type="range" min="30" max="600" value="300" step="5" class="slider" id="game_duration"><br>
+			<span id="Answer_delay_show">Answer Deplay</span><br>
+			<input type="range" min="1" max="10" value="5" class="slider" id="answer_delay"><br>
+		</div>
+		<button class="btn start">Start Game</button></div>
+	<div id="Puzzle_box" class="game-state hidden">
+		<span label="puzzle equation" id="puzzle"></span><br>
+		<input label="puzzle answer" id="answer" placeholder="Answer..."><br>
+		<button id="Submit_Puzzle" class="btn success" onclick="check_answer()">Submit Anwser</button>
+	</div>
+	<div id="Settings" class="game-state hidden"></div>
+	<div id="End_Puzzle" class="game-state hidden">
+		<span id="correct_answer" style="color:#00ff80;"></span><br>
+		<span id="incorrect_answer" style="color:#ff0081;"></span><br>
+		<span id="skipped_answer" style="color:#ff8000;"></span><br>
+	</div>
+    <script>
+        function c(){
+            document.getElementById("options").classList.toggle("animate")
+        }
+    </script>
+	<script src="js/slider.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
